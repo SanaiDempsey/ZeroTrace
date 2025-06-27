@@ -1,0 +1,54 @@
+body
+{
+    background: #f8f8f8;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    padding-top: 100px;
+}
+
+title-section h1
+{
+    position: relative;
+    font-size: 48px;
+    color:black;
+    animation: glitch 1s infinite;
+}
+
+.title-section h1::before,
+.title-section h1::after
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.title-section h1::before
+{
+    left: -2px;
+    text-shadow: -2px 0 blue;
+    animation: glitchBottom 1s infinite;
+}
+
+.title-section h1::after
+{
+    left: -2px;
+    text-shadow: -2px 0 blue;
+    animation: glitchBottom 1s infinite;
+}
+
+@keyframes glitchTop
+{
+    0%{clip-path: insert(0 0 90% 0);}
+    50%{clip-path: insert(10% 0 85% 0);}
+    100%{clip-path: insert(0 0 90% 0);}
+}
+
+@keyframes glitchBottom
+{
+    0%{clip-path: insert(80% 0 0 0);}
+    50%{clip-path: insert(85% 0 10% 0);}
+    100%{clip-path: insert(80% 0 0 0);}
+}
