@@ -1,2 +1,2 @@
 # ZeroTrace
-encrypted anonymous messaging app
+encrypted anonymous messaging site
