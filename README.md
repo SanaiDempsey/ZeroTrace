@@ -1,2 +1,2 @@
 # ZeroTrace
-encrypted anonymous messaging site
+A secure encrypted anonymous messaging website under development
